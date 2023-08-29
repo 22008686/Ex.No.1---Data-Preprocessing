@@ -88,27 +88,27 @@ print(df1)
 ```
 ## OUTPUT:
 
-## df.head():
+## DATASET:
 
 ![exp1nn1](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/6cba75fc-bbee-41d7-a696-8a58396017a6)
 
-## df.isnull().sum():
+## VALUES OF INPUT AND OUTPUT DATA ON VAR X AND Y:
 
 ![exp 1nn2](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/e6a4e663-5f26-4ecd-908e-98bc51152adf)
 
-## df value:
+## NORMALISING DATA:
 
 ![exp1nn3](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/0ff6bf11-d939-4a6d-a644-f66a9dfb2b6e)
 
-## Values of input and output data on var x and y:
+## X AND Y TRAIN VALUES:
 
 ![exp1nn4](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/8d0af872-c335-4aa7-b5a6-d08384c18bc8)
 
-## Normalising data:
+## X AND Y VALUES:
 
 ![exp1nn5](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/44dae087-18e3-49a9-8d92-25a460752df7)
 
-## X and Y values:
+## X AND Y TEST VALUES:
 
 ![exp1nn6](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/af9c159f-a081-42cf-b9f2-55ecd1ee0f26)
 
