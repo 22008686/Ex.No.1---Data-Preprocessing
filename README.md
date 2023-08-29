@@ -1,4 +1,5 @@
 # Ex.No.1---Data-Preprocessing
+
 ## AIM:
 
 To perform Data preprocessing in a data set downloaded from Kaggle
@@ -24,18 +25,93 @@ Another aspect is that the data set should be formatted in such a way that more 
 
 
 ## ALGORITHM:
-Importing the libraries
-Importing the dataset
-Taking care of missing data
-Encoding categorical data
-Normalizing the data
-Splitting the data into test and train
+
+1.Importing the libraries
+2.Importing the dataset
+3.Taking care of missing data
+4.Encoding categorical data
+5.Normalizing the data
+6.Splitting the data into test and train
 
 ## PROGRAM:
-/Write your code here/
+```
+Developed by: M.Pavithra
+Reg no: 212222100032
 
+import pandas as pd
+
+df=pd.read_csv("/content/Churn_Modelling.csv")
+
+df.head()
+
+df.isnull().sum()
+
+df.drop(["RowNumber","Age","Gender","Geography","Surname"],inplace=True,axis=1)
+
+print(df)
+
+x=df.iloc[:,:-1].values
+
+y=df.iloc[:,-1].values
+
+print(x)
+
+print(y)
+
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+
+df1 = pd.DataFrame(scaler.fit_transform(df))
+
+print(df1)
+
+from sklearn.model_selection import train_test_split
+
+xtrain,ytrain,xtest,ytest=train_test_split(x,y,test_size=0.2,random_state=2)
+
+print(xtrain)
+
+print(len(xtrain))
+
+print(xtest)
+
+print(len(xtest))
+
+from sklearn.preprocessing import StandardScaler
+
+sc = StandardScaler()
+
+df1 = sc.fit_transform(df)
+
+print(df1)
+```
 ## OUTPUT:
-/ Show the result/
 
-## RESULT
-/Type your result here/
+## df.head():
+
+![exp1nn1](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/6cba75fc-bbee-41d7-a696-8a58396017a6)
+
+## df.isnull().sum():
+
+![exp 1nn2](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/e6a4e663-5f26-4ecd-908e-98bc51152adf)
+
+## df value:
+
+![exp1nn3](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/0ff6bf11-d939-4a6d-a644-f66a9dfb2b6e)
+
+## Values of input and output data on var x and y:
+
+![exp1nn4](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/8d0af872-c335-4aa7-b5a6-d08384c18bc8)
+
+## Normalising data:
+
+![exp1nn5](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/44dae087-18e3-49a9-8d92-25a460752df7)
+
+## X and Y values:
+
+![exp1nn6](https://github.com/22008686/Ex.No.1---Data-Preprocessing/assets/118916413/af9c159f-a081-42cf-b9f2-55ecd1ee0f26)
+
+## RESULT:
+
+Thus,the program to perform Data preprocessing in a data set downloaded from Kaggle is implemented successfully .
